@@ -302,6 +302,12 @@ h2 {
   border: 1px solid var(--line);
 }
 
+.gallery-grid img.gallery-img-fit {
+  object-fit: contain;
+  background: #fff;
+  padding: 0.35rem;
+}
+
 .review-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
