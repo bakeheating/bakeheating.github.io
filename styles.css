@@ -250,6 +250,38 @@ h2 {
   font-size: 1.3rem;
 }
 
+.services-detailed {
+  padding: 4.1rem 0;
+  background: var(--surface);
+}
+
+.services-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 18px rgba(15, 22, 34, 0.05);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+  color: var(--blue);
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -283,6 +315,7 @@ blockquote {
   border-left: 4px solid var(--blue);
   border-radius: 12px;
   padding: 1rem 1.1rem;
+  text-align: center;
 }
 
 blockquote cite {
@@ -337,6 +370,10 @@ blockquote cite {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .services-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-grid,
   .split,
   .contact-panel {
@@ -353,6 +390,7 @@ blockquote cite {
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 0.75rem 0;
+    min-height: 60px;
   }
 
   .brand-logo-main {
